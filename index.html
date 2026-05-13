@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlfaXGood | Official Space</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card: #1e293b;
+            --accent: #38bdf8;
+            --text: #f8fafc;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background: var(--card);
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.1);
+            transform: translateY(50px);
+            opacity: 0;
+            animation: fadeIn 1s forwards ease-out;
+            max-width: 400px;
+            width: 90%;
+        }
+
+        @keyframes fadeIn {
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(90deg, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p { color: #94a3b8; margin-bottom: 2rem; }
+
+        .links { display: flex; flex-direction: column; gap: 1rem; }
+
+        .link-card {
+            text-decoration: none;
+            color: var(--text);
+            background: rgba(255,255,255,0.05);
+            padding: 1rem;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            font-weight: 600;
+        }
+
+        .link-card:hover {
+            background: rgba(56, 189, 248, 0.1);
+            border-color: var(--accent);
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+        }
+
+        .tg { color: #229ED9; }
+        .gh { color: #ffffff; }
+        .web { color: #fbbf24; }
+
+        /* Декоративный круг на фоне */
+        .circle {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: var(--accent);
+            filter: blur(150px);
+            border-radius: 50%;
+            opacity: 0.2;
+            z-index: -1;
+            animation: move 10s infinite alternate;
+        }
+
+        @keyframes move {
+            from { transform: translate(-50%, -50%); }
+            to { transform: translate(50%, 50%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="container">
+        <h1>AlfaXGood</h1>
+        <p>Game Developer & Creative Mind</p>
+        
+        <div class="links">
+            <a href="https://sitebuilding.alfaxgood.com" class="link-card web">🌐 Site Building</a>
+            <a href="https://t.me/твой_ник" class="link-card tg">📱 Telegram Channel</a>
+            <a href="https://github.com/alfaxgood" class="link-card gh">🐙 GitHub Profile</a>
+        </div>
+    </div>
+</body>
+</html>

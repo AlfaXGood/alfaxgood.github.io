@@ -516,7 +516,13 @@
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
       <div class="container-fluid px-3">
-        <a class="navbar-brand" href="#">AlfaXGood</a>
+        <grid class="d-flex align-items-center">
+          <img
+            src="https://lh3.googleusercontent.com/a/ACg8ocKXEwEaKxVbPzeGB07uA2qkXs0j9nFomEu8inU4r6UgDEpzg7U=s360-c-no"
+            alt="Логотип AlfaXGood"
+            style="width: 50px; height: 50px; border-radius: 50%; margin-right: 10px;"/>
+          <a class="navbar-brand" href="#">AlfaXGood</a>
+        </grid>
         <div class="d-flex ms-auto align-items-center gap-2">
           <a class="btn btn-custom" href="#about">Обо мне</a>
           <a class="btn btn-custom" href="#projects">Проекты</a>
@@ -526,28 +532,38 @@
     </nav>
 
     <section id="about">
-      <h1>Обо мне</h1>
+      <h1>О НАС</h1>
       <div class="about-card">
         <div class="about-photo">
           <img
-            src="https://cdn-edge.kwork.ru/files/avatar/large_r/23/20104207-1.jpg"
-            alt="Фото Илии"
+            src="https://avatars.githubusercontent.com/u/266521485?s=400&u=7957b49a0fd96caec8dd376d7ce9aa139ca68a45&v=4"
+            alt="Фото AlfaXGood"
           />
         </div>
         <div class="about-body">
-          <h2>Привет! 👋 Я Илия</h2>
+          <h2>Привет!👋</h2>
           <ul>
             <li>
-              Создаю игры и сайты, люблю дизайн и код. Этот сайт демонстрирует
-              мои проекты и навыки.
+              <b>Интересы:</b>
+              <br/>
+              Создаём игры, приложения и сайты, Любим дизайн и код. Этот сайт демонстрирует
+              наши проекты и навыки.
             </li>
-            <li>Основатель компании: AlfaXGood ©</li>
+            <li><b>Компания:</b>
+              <br/>
+              AlfaXGood ©</li>
             <li>
-              Текущий проект: Night Prison (Roblox) — в разработке, с уникальной
-              механикой и кастомными мирами.
+              <b>Текущий проект:</b>
+              <br/>
+              <b><a href="#projects">Party Host</a></b> — 
+              приложение для организации вечеринок.
             </li>
             <li>
-              Навыки: C# (Unity), HTML/CSS/JS, Pixelorama, Figma, Photoshop.
+              <b>Навыки:</b>
+              <br/>
+              <b>C#</b>, Unity, <b>.NET</b>, MAUI,
+              <b>HTML</b>, CSS, <b>JS</b>,
+              Photoshop...
             </li>
           </ul>
         </div>
@@ -555,7 +571,7 @@
     </section>
 
     <section id="skills">
-      <h2>Мои Навыки</h2>
+      <h2>Навыки</h2>
       <div class="skills-section">
         <div class="skill-grid">
           <div class="skill-item">
@@ -564,24 +580,27 @@
             <p>Разработка игр</p>
           </div>
           <div class="skill-item">
+            <span class="emoji">💻</span>
+            <h4>.NET</h4>
+            <p>Разработка приложений</p>
+          </div>
+          <div class="skill-item">
+            <span class="emoji">📱</span>
+            <h4>MAUI</h4>
+            <p>Кросс-
+              <br/>
+              платформенные приложения
+            </p>
+          </div>
+          <div class="skill-item">
             <span class="emoji">🌐</span>
-            <h4>HTML/CSS/JS</h4>
+            <h4>HTML, CSS, JS</h4>
             <p>Веб-разработка</p>
           </div>
           <div class="skill-item">
             <span class="emoji">🖼️</span>
             <h4>Photoshop</h4>
             <p>Обработка изображений</p>
-          </div>
-          <div class="skill-item">
-            <span class="emoji">🎭</span>
-            <h4>Pixelorama</h4>
-            <p>Пиксель-арт</p>
-          </div>
-          <div class="skill-item">
-            <span class="emoji">🏗️</span>
-            <h4>Git</h4>
-            <p>Контроль версий</p>
           </div>
         </div>
       </div>
@@ -591,33 +610,43 @@
       <h2>Проекты</h2>
       <div class="projects">
         <div class="project-card">
-          <h3>🎮 Night Prison (Roblox)</h3>
+          <h3 align="center">🎉 Party Host</h3>
           <p>
-            Моя разработка: уникальный опыт для игроков,
-            кастомные карты и внутренняя механика. Сбегайте из тюрьмы ночью!
+            Приложение для организации вечеринок, с множетвом игр,
+            а также с возможностью создавать свои паки слов для любой игры,
+            и системой рейтингов.
           </p>
-          <i style="text-align: center; margin-top: auto;">⚙️В разроботке🛠️</i>
+          <img
+            align="center"
+            src=""
+            alt="Party Host"
+            style="width: 100%; max-width: 200px; display: block; margin: 10px auto;"/>
           <a
             class="a-btn"
-            href="https://www.roblox.com/games/134589021652538/Night-Prison"
+            href="https://partyhost.alfaxgood.com"
             target="_blank"
-            >Перейти к проекту</a
-          >
+            >Провести вечеринку!
+          </a>
         </div>
 
         <div class="project-card">
-          <h3>🌐 Site Building</h3>
+          <h3 align="center">🌐 Site Building</h3>
           <p>
             Конструктор сайтов с автоматической публикацией на GitHub Pages,
             drag & drop редактор, адаптивный дизайн и быстрый старт для
             мини-сайтов.
           </p>
+          <img
+            align="center"
+            src=""
+            alt="Site Building"
+            style="width: 100%; max-width: 200px; display: block; margin: 10px auto;"/>
           <a
             class="a-btn"
             href="https://sitebuilding.alfaxgood.com"
             target="_blank"
-            >Перейти на сайт</a
-          >
+            >Перейти на сайт.
+          </a>
         </div>
       </div>
     </section>
@@ -629,7 +658,7 @@
     </div>
 
     <section id="contact">
-      <h2>Связаться со мной</h2>
+      <h2>Связаться с нами</h2>
       <div class="form-box">
         <form id="contactForm">
           <label for="name">* Имя:</label>
@@ -687,7 +716,7 @@
 
     <footer>
       <div class="footer-social">
-        <a href="https://discord.gg/Up6WxePsY" class="social-item" title="Discord" target="_blank">
+        <a href="https://discord.gg/v5GPeS65T" class="social-item" title="Discord" target="_blank">
           <div class="social-item-icon">💬</div>
           <div class="social-item-label">Discord</div>
         </a>
@@ -695,7 +724,7 @@
           <div class="social-item-icon">🐙</div>
           <div class="social-item-label">GitHub</div>
         </a>
-        <a href="https://t.me/PhotoshopGood" class="social-item" title="Telegram" target="_blank">
+        <a href="https://t.me/IliaXGood" class="social-item" title="Telegram" target="_blank">
           <div class="social-item-icon">✈️</div>
           <div class="social-item-label">Telegram</div>
         </a>
